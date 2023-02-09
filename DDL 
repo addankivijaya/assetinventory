@@ -1,0 +1,12 @@
+
+// Creating table 'asset_inventory'
+
+CREATE TABLE asset_inventory(  
+	id INT PRIMARY KEY AUTO_INCREMENT,   
+	signed_out_to VARCHAR(45) NOT NULL,
+	location VARCHAR(45),
+	phone VARCHAR(20) NOT NULL,
+	device_id VARCHAR(8) NOT NULL,
+	category ENUM('computer', ' peripheral', 'audio', ' video') NOT NULL,
+	purchased date NOT NULL
+); 
